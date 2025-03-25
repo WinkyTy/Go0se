@@ -1,0 +1,2 @@
+Now it works and works silently. Script downloads Goose from my github [Requires internet connection] page and installs it at %USERPROFILE% so no admin rights snould be necessary. It works on my sandbox tho. 
+Prob v.2 will run from flipper without needing to download the file, but not sure it is possible without qFlipper pre-installed. 

